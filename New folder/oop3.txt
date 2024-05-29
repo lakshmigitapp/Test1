@@ -1,0 +1,198 @@
+class variables and class methods
+----------------------------------
+class variables are made for entire class(ALL objects).
+only one copy is created and distributed to all objects.
+modification in class variable impact of all objects.
+
+class Employee:
+    company_name='infosys'
+	def __init__(self,name,sal):
+	    self.name=name
+		self.sal=sal
+		
+class Employee:
+    company_name='infosys'
+    def __init__(self,name,sal):
+        self.name=name
+        self.sal=sal
+
+##print(Employee.company_name)
+##
+##Employee.company_name='shivasys'
+##print(Employee.company_name)
+##e=Employee('shankar',20000)
+##print(e.company_name)
+
+teju=Employee('shankar',2000)
+print(teju.company_name)
+teju.company_name='tejusys'
+print(teju.company_name)
+print(Employee.company_name)
+
+
+class method:-
+-------------
+works on the class variable
+class Employee:
+    company_name='infosys'
+    def __init__(self,name,sal):
+        self.name=name
+        self.sal=sal
+    @classmethod
+    def get_company_name(cls):
+        print(cls.company_name)
+
+Employee.get_company_name()   
+
+instance method
+---------------
+works on the instance variable
+
+class Employee:
+    def __init__(self,name,sal):
+        self.name=name
+        self.sal=sal
+    def display(self):
+        print(self.name)
+        print(self.sal)
+
+e1=Employee('shankar',20000)
+e1.display()
+e2=Employee('shruthi',10000)
+e2.display()
+
+
+static method
+-------------
+-methods which performs operation on external data
+-it can also perform operation on class data.
+-no need to pass object  or class reference.
+-created by using decorator '@staticmethod'
+
+class Bank:
+    bank_name='SBI'
+    r=12.25
+
+    @staticmethod
+    def simple_interest(prin,n):
+	
+        si=(prin*n*Bank.r)/100
+        print(si)
+        
+Bank.simple_interest(200000,3)   
+
+
+
+
+inheritance
+-----------
+acquaring the properties from the existing class to new class.
+
+class RaviKanth:
+    h_name='A nilaya'
+	def mane(self):
+	    print(h_name)
+		
+class Suresh:
+   c_name='C nilaya'
+   def sumane(self):
+       print(c_name)
+
+s1=Suresh()
+print(s1.c_name)
+s1.sumane()
+
+s2=RaviKanth()
+print(s2.h_name)
+s2.man()
+
+
+
+
+
+class Employee:
+    bonus=2000
+    def display(self):
+        print('this employee class method')
+
+class Manager(Employee):
+    bonus1=5000
+    def show(self):
+        print('this mananger class method')
+
+
+m=Manager()
+print(m.bonus)
+
+class Customer:
+   setPersonalDetails()
+   getPersonalDetails()
+   setEductionalDetails()
+   getEductionalDetails()
+   setBankAccount()
+   
+ 
+class Employee(Customer):
+
+   setSalary()
+   setBonus()
+   
+
+constructor Inheritance
+========================
+
+class Father:
+    def __init__(self):
+        print('father constructor called')
+        self.vehicle='scooter'
+        print(self.vehicle)
+
+class Son(Father):
+    pass
+    
+
+super() function:- is used to call the parent constructor.
+
+
+s=Son()
+class Father:
+    def __init__(self):
+        print('father constructor called')
+        self.vehicle='scooter'
+        print(self.vehicle)
+
+class Son(Father):
+    
+    def __init__(self):
+        super().__init__()
+        print('son constructor called')
+        self.vehicle='BMW'
+        print(self.vehicle)
+
+
+s=Son()
+   
+   
+   
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

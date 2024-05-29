@@ -1,0 +1,7 @@
+"id","name","sex","salary","deptno"
+101,shankar,"m",20000,10
+102,shiva,"m",30000,10
+103,prince,"m",50000,20
+104,darshan,"m",25000,20
+105,rachu,"f",15000,30
+105,teju,"f",8000,40

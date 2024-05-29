@@ -1,0 +1,45 @@
+go to project folder
+for ex:
+
+F:\DJANGOPROJECTS\testproj
+
+testproj is django project
+
+git init
+git commit -m "first comment"
+git branch -M main
+git remote add origin https://github.com/lakshmigit007/testproj.git
+git push -u origin main
+
+---------------------------------
+if we get any error try below
+
+git reset --mixed origin/main
+git add .
+git commit -m "This is a new commit for what I originally planned to be amended"
+git push origin main
+
+link
+----
+https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote
+
+create a repository
+
+gmail.com
+
+lakshmigit1234 app
+lakshmigitapp@gmail.com
+
+github.com
+
+lakshmigitapp
+Apponix@1234
+
+090608 67386
+
+------------------------------------------------------------------------
+
+www.pythonanywhere.com
+
+username:lakshmigit007
+pwd:Apponix@1234

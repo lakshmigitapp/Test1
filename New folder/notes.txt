@@ -1,0 +1,81 @@
+  python building blocks
+  ----------------------
+  keywords
+  identifier
+  indentation
+  comments
+  quotes
+  reading from user
+  datatypes
+
+
+  keywords
+  ---------
+  -already defined words in python.
+  -we can not modify the keywords.
+  -every keyword has special meaning.
+  -in python there is 33 keywords.
+  -all keywords are lower case except False,None,True
+
+  how to list keywords
+  help('keywords')
+
+  comments
+  --------
+  -used to understand the code better and it is for readability
+  -comments are not executed by python it just ignores
+  -it is used only for reading purpose
+
+  two types of comments
+  1)single line comments 
+         # symbol is used to provide the comment
+       a)always comment on the right of the program
+       b)if comment at first the entire line commented
+
+  2)multi line comments
+         ''' 
+            statements
+         '''
+   if you need to comment mulitiple lines in the 1000 lines of code
+   then we need to use multiline comments.
+
+print('welcome')
+'''
+a = 20  #20 is assigned to a
+b = 40  # 40 is assigned to b
+c = a+b  # adding a and b and storing c
+print(c)  # display value of c on the console
+
+'''
+print('end of the welcome')
+
+indentation
+-----------
+1)Rule1 :- always starts with first column for all the lines.
+
+2)Rule2:- 
+     if any statement ends with colon(:)
+     subsequent statement should start with 4 spaces.
+          if 10>5:
+             print('condition is true')
+             print('super execution')
+             print('end of the block)
+          else:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
